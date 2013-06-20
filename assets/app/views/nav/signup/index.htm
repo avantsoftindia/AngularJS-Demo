@@ -1,0 +1,24 @@
+
+<div ng-controller="nav.SignupController">
+
+
+	<!-- Include View Content. -->
+	<p>
+		<h3>Please Signup here...</h3>
+	</p>
+	
+	<div ng-repeat='item in items'>
+		<table>
+			<tr>
+				<td width="200" height="50"><span>{{item.title}}</span></td>
+				<td width="200" height="50"><input ng-model='item.value'></td>
+			</tr>
+		</table>
+	</div>
+	
+	<br>
+		<a class="btn" href="#/home">Submit</a>
+		<a class="btn" href="#/home">Cancel</a>
+	
+
+</div>
