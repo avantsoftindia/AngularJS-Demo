@@ -4,6 +4,7 @@ var Demo = angular.module( "Demo", [] );
 
 // Configure the routing. The $routeProvider will be automatically injected into 
 // the configurator.
+
 Demo.config(
 	function( $routeProvider ){
 		
@@ -22,13 +23,37 @@ Demo.config(
 			.when(
 				"/login",
 				{
-					action: "application"
+					action: "application.appview"
 				}
 			)
 			.when(
 				"/signup",
 				{
 					action: "standard.signup"
+				}
+			)
+			.when(
+				"/appview",
+				{
+					action: "application.appview"
+				}
+			)
+			.when(
+				"/users",
+				{
+					action: "application.users"
+				}
+			)
+			.when(
+				"/datasets",
+				{
+					action: "application.datasets"
+				}
+			)
+			.when(
+				"/appview/create",
+				{
+					action: "application.appview.create"
 				}
 			)
 			.otherwise(
