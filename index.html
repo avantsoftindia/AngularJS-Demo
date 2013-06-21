@@ -25,6 +25,7 @@
 		<!-- Core layouts. -->
 		<div ng-switch-when="splash" ng-include=" 'assets/app/views/layouts/splash.htm' "></div>
 		<div ng-switch-when="standard" ng-include=" 'assets/app/views/layouts/standard.htm' "></div>
+		<div ng-switch-when="application" ng-include=" 'assets/app/views/layouts/application.htm' "></div>
 	</div>
 	
 	<script type="text/javascript" src="assets/app/vendor/angularjs/angular.min.js"></script>
@@ -37,8 +38,11 @@
 	<script type="text/javascript" src="assets/app/controllers/home/home-controller.js"></script>
 	<script type="text/javascript" src="assets/app/controllers/layouts/splash-controller.js"></script>
 	<script type="text/javascript" src="assets/app/controllers/layouts/standard-controller.js"></script>
-	<script type="text/javascript" src="assets/app/controllers/nav/login-controller.js"></script>
+	<script type="text/javascript" src="assets/app/controllers/layouts/ application-controller.js"></script>
+<!-- 	<script type="text/javascript" src="assets/app/controllers/nav/login-controller.js"></script> -->
 	<script type="text/javascript" src="assets/app/controllers/nav/signup-controller.js"></script>
+	<script type="text/javascript" src="assets/app/controllers/innerNav/welcomePage/welcomepage-controller.js"></script>
+	
 	<script type="text/javascript" src="assets/app/controllers/app-controller.js"></script>
 	
 	<!-- Load Services. -->

@@ -22,7 +22,7 @@ Demo.config(
 			.when(
 				"/login",
 				{
-					action: "standard.login"
+					action: "application"
 				}
 			)
 			.when(
