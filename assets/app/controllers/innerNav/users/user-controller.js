@@ -80,7 +80,6 @@
 			
 			JsonUsers.read('assets/app/json/users.json', $scope);
 			
-			
 			/*$scope.login = function(index) {
 				$scope.items[0].title;
 				alert("LOGGED in successfully ")

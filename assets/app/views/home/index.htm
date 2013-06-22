@@ -1,16 +1,17 @@
 
-<div ng-controller="home.HomeController">
-
-
+<div ng-controller="home.login">
 	<p>
 		<h3>Please Login...</h3>
 	</p>
+    <label class="control-label" for="inputUsername">Username</label>
+        <input type="text" id="inputUsername" placeholder="Username" ng-model="inputUsername" ng-change="checkUsername()">
+    <br />
+    <label class="control-label" for="inputPassword">Password</label>
+        <input type="password" id="inputPassword" placeholder="Password" ng-model="inputPassword">
+    <br />
+    <span class="help-block">{{alertMessage}}</span>
+
 	
-	<div ng-repeat='item in items'>
-		<span>{{item.title}}</span>
-		<input ng-model='item.value'>
-		
-	</div>
 	
 	<br>
 		<a class="btn" href="#/login">Login</a>
